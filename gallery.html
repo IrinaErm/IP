@@ -12,13 +12,35 @@
 		</div>
 	
 		<div class="gallery-container">
-			<div class="slide">
-				<img src="source/1.jpg">
+			<div class="slide move">
+				<img src="images/1.jpg">
+				<div class="text"> Пингвин и зебра пришли в фотоателье. <br>— Будем делать цветную фотографию? — спрашивает фотограф.
+					<br>— Нет, достаточно чёрно-белой.
+				</div>
 			</div>
-			
-			
-			<a class="prev" onclick="lastSlide()">p</a>
-			<a class="next" onclick="nextSlide()">n</a>
+			<div class="slide move">
+				<img src="images/2.jpg">
+				<div class="text"> "Прежде чем взбираться по лестнице к успеху, 
+					убедитесь, что она прислонена к тому зданию, которое вам нужно" <br> Стивен Кови
+				</div>
+			</div>
+			<div class="slide move">
+				<img src="images/3.jpg">
+				<div class="text"> Если Вас осенило, то причем здесь осень?</div>
+			</div>
+			<div class="slide move">
+				<img src="images/4.jpg">
+				<div class="text"> "В театре жизни главное — буфет" <br> Геннадий Малкин	</div>
+			</div>
+			<div class="slide move">
+				<img src="images/5.jpg">
+				<div class="text"> Не надо слов, они лишь суета... </div>
+			</div>		
+			<script>
+				showSlide(0, 1);
+			</script>
+			<a class="prev" onclick="prevSlide()"><</a>
+			<a class="next" onclick="nextSlide()">></a>
 		</div>	
 	</body>
 </html>
