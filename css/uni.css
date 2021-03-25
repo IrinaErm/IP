@@ -1,0 +1,51 @@
+.container {
+    width: 85%;
+	background-color: white;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	padding: 0;
+	border: 1px solid white;
+} 
+.content {
+	width: 90%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 50px;
+}
+.content-right {
+	width: 90%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 50px;
+}
+.content-right p {
+	text-align: right;
+}
+.content p {
+	text-align: left;
+}
+
+h1 {
+	font-family: 'Jura', sans-serif;
+	color: black;
+	font-size: 35px;
+	font-style: bold;
+	text-align: center;
+}
+h3 {
+	font-family: 'Jura', sans-serif;
+	color: black;
+	font-size: 25px;
+	font-style: bold;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+.content-right h3 {
+	text-align: right;
+}
+
