@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans+Condensed:wght@300&family=Raleway:wght@100&display=swap');
+
+.userTable {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+	margin-top: 5%;
+	vertical-align: middle;
+}
+.userTable table {
+    width: 100%;
+    border-collapse: collapse;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 0.1em;
+	font-style: bold;
+    font-size: 21px;   
+}
+.userTable td {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	width: 18%;
+}
+.userTable .fiotd {
+    text-align: left;
+	width: 25%;
+}
+.userTable .last {
+    padding-left: 15px;
+    padding-right: 5px;
+    width: 50%;
+}
+.userTable .but {
+    border: none;
+    width: 30px;
+    padding-left: 15px;   
+    text-align: center;
+	vertical-align: middle;
+}
+.userTable img {
+    width: 25px;
+    height: 25px;
+}
+.userTable img:hover {
+    background-color: red;
+	border-radius: 50%;
+}
+.userTable #update:hover {
+    background-color: #F1BF14;
+	border-radius: 15%;
+}
+
+#addButton {
+    position: relative;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 0.1em;
+	font-style: bold;
+    font-size: 25px;
+    padding-left: 10px;
+	padding-right: 10px;
+    border: none;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+	margin: auto;
+	margin-bottom: 5%;
+}
+#addButton:hover {
+    border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 640px) {
+	.userTable table {
+		font-size: 15px;
+		border-collapse: separate;		
+	}
+	.userTable {
+		width: 95%;	
+	}
+}

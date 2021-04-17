@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Лаб. №4</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<p>Введите весовую матрицу w(u,v): <br> 0, если вершины не соединены дугой <br> d (целое положительное число), если вершины соединены дугой веса d</p>
+		<form name="form" id="form" method="post"> 
+			<p>От вершины (начиная с 1) </p><input type="number" name="from"/> <br>
+			<p>До вершины </p><input type="number" name="to"/> <br> <br>
+			<textarea id="mas" name="mas" rows="10" cols="30"></textarea> <br>
+			<input type="submit" name="first"/>
+		</form>
+		<br>
+		<div id="result"></div>
+	</body>
+	
+	<script>
+		$("form").submit(function(e) {
+
+			e.preventDefault();
+
+			var form = $(this);
+			var url = form.attr('action');
+			
+			$.ajax({
+				   type: "POST",
+				   url: 'php/functions.php',
+				   data: form.serialize(),
+				   success: function(data)
+				   {
+					   document.getElementById('result').innerHTML = data;
+				   }
+				 });
+
+			
+		});
+	</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Лаб. №1</title>		
+		<script src="js/functions.js"></script>
+	</head>
+	
+	<body>
+		Введите элементы множества в формате ccjb:
+			c - цифра,
+			j - нечетная цифра,
+			b - буква (a-z,а-я) <br> 
+		Множество №1 <input type="text" id="mas1"> <br> 
+		Множество №2 <input type="text" id="mas2"> <br>
+
+		<input type="button" value="Объединение" onClick="calcUnion();"> 
+		<div id="union"></div>
+		<input type="button" value="Пересечение" onClick="calcIntersection();">
+		<div id="intersection"></div>
+		<input type="button" value="Дополнение"  onClick="calcDifference();">
+		<div id="difference"></div>
+		<input type="button" value="Симметрическая разность" onClick="calcSymmDifference();">
+		<div id="symmDifference"></div>
+	
+	</body>
+</html>

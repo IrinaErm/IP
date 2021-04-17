@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+
+.gallery-container {
+	top: 30px;
+	max-width: 100%;
+	max-height: 70%;
+	min-height: 60vh;
+	position: relative;
+	margin: auto;
+}
+.active {
+	font-family: 'Jura', sans-serif;
+	color: white;
+	font-size: 21px;
+	font-style: bold;
+	border-bottom: 1px solid black;
+}
+
+.divs {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	max-width: 80%;
+	max-height: 60vh;
+}
+.img {
+	display: inline-block;
+	top: 0;
+	height: 100%;
+	width: 5%;
+	z-index: 4;
+	position: absolute;	
+	/*border: 1px solid #DCDEDC;*/
+}
+.slide {
+	max-width: 80%;
+	display: none;
+}
+.column img, .divs img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	max-height: 60vh;
+}
+
+.text {
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 18px;
+	padding: 15px;
+	width: 90%;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;	
+	top: 45%;
+	font-size: 75px;
+	color: black;
+	width: 50px;
+	text-align: center;
+	z-index: 5;
+}
+.prev {
+	margin-left: 5%;
+}
+.next {
+	right: 0;
+	margin-right: 5%;
+}
+
+.prev:hover, .next:hover, .prev_row:hover, .next_row:hover {
+	background-color: rgba(241, 191, 20, 0.5);
+	border-radius: 15px;
+	color: white;
+	transition: background-color 0.5s ease-out, color 0.5s ease;
+}
+.row {
+  height: 130px;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  padding: 0;
+  text-align: center;
+}
+.column {
+  display: none;
+  padding: 0;
+  max-width: 32%;
+  vertical-align: middle;
+  display: none;
+}
+.column img {
+	display: block;
+	padding: 0;
+	height: 100px;
+	max-width: 100%;
+	opacity: 0.6;
+}
+.column:hover > img {
+  opacity: 1;
+  height: 120px;
+  cursor: pointer;
+}
+.act > img {
+	opacity: 1;
+	height: 120px;
+}
+
+.prev_row, .next_row {
+	cursor: pointer;
+	position: absolute;	
+	top: 20%;
+	font-size: 45px;
+	color: black;
+	width: 50px;
+	text-align: center;
+	z-index: 5;
+	vertical-align: middle;
+}
+.next_row {
+	right: 23%;
+}
+.prev_row {
+	left: 23%;
+}
+
+@media screen and (max-width: 640px) {
+	.prev, .next {
+		font-size: 60px;
+		width: 35px;
+		margin: 0;
+	}
+	/*.divs {
+		max-height: 40vh;
+	}
+	.img {
+		height: 50%;	
+	}*/
+	.next_row {
+		right: 0;
+	}
+	.prev_row {
+		left: 0;
+	}
+}

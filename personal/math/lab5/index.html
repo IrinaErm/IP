@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Лаб. №5</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<p>Введите пары вершин (первая вершина - 0): <br> </p>
+		<form name="form" id="form" method="post" action="php/functions.php"> 
+			<textarea id="mas" name="mas" rows="10" cols="30"></textarea> <br>
+			<input type="submit" name="first"/>
+		</form>
+		<br>
+		<div id="result"></div>
+	</body>
+	
+	<script>
+		$("#form").submit(function(e) {
+
+			e.preventDefault();
+
+			var form = $(this);
+			var url = form.attr('action');
+			
+			$.ajax({
+				   type: "POST",
+				   url: 'php/functions.php',
+				   data: form.serialize(),
+				   success: function(data)
+				   {
+					   document.getElementById('result').innerHTML = data;
+				   }
+				 });
+
+			
+		});
+	</script>
+</html>
